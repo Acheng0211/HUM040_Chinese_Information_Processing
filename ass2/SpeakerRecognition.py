@@ -36,7 +36,7 @@ numSpeakers = 4
 # 定义情绪类别
 emotion_classes = ["neutral", "calm", "happy", "sad", "angry", "fearful", "disgust", "surprised"]
 
-'''
+
 def speaker_diarization(filename, n_speakers, mid_window=1.0, mid_step=0.1,
                         short_window=0.1, lda_dim=0, plot_res=False):
     """
@@ -279,7 +279,7 @@ def speaker_diarization(filename, n_speakers, mid_window=1.0, mid_step=0.1,
             plt.ylabel("average clustering's sillouette")
         plt.show()
     return cls, purity_cluster_m, purity_speaker_m
-'''
+
 
 # 使用speech_recognition库录制音频
 def record_audio(audio_file):
